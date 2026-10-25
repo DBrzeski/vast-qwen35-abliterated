@@ -1,0 +1,28 @@
+# Wagi modeli i niedokończone pobierania
+*.gguf
+*.part
+*.aria2
+*.bad
+*.sha256-ok
+
+# Stan i logi instalatora (na Vast.ai: /workspace/vast-qwen35)
+vast-qwen35/
+.tmpstate/
+logs/
+*.log
+selected.env
+report.txt
+
+# Sekrety - nigdy nie commitować
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*.ppk
+auth.json
+
+# Python
+__pycache__/
+*.pyc

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "vast": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Vast.ai (llama.cpp)",
+      "options": {
+        "baseURL": "http://127.0.0.1:8080/v1"
+      },
+      "models": {
+        "qwen-coder": {
+          "name": "Qwen3.5-35B-A3B Abliterated Q4_K_M",
+          "tool_call": true,
+          "reasoning": true,
+          "limit": {
+            "context": 262144,
+            "output": 8192
+          }
+        }
+      }
+    }
+  },
+  "model": "vast/qwen-coder"
+}
